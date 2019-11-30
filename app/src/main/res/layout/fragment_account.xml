@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+        <variable
+            name="item"
+            type="com.haerul.mapples.data.entity.User" />
+    </data>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorBackground">
+        
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:paddingBottom="70dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_card">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginBottom="10dp"
+                        android:src="@drawable/ic_account"
+                        android:tint="@color/colorTextGray1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="70dp"
+                        android:text="@{item.user_name}"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                        android:textColor="@color/colorTextGray4"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="-10dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginRight="16dp"
+                        android:background="@drawable/bg_success_outlined"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="5dp"
+                        android:paddingRight="10dp"
+                        android:paddingBottom="5dp"
+                        android:text="Active"
+                        android:textColor="@color/colorSuccessDark"
+                        android:textSize="@dimen/textSmall" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bg_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:text="Profile Details "
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="10dp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="16dp"
+                        android:textColor="@color/colorAccent"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginTop="15dp">
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:text="User UID"
+                                android:layout_weight="2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+                            <TextView
+                                android:text="@{item.user_uid}"
+                                android:layout_weight="1"
+                                android:gravity="end"
+                                android:textStyle="bold"
+                                android:textColor="@color/colorTextGray4"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_marginTop="@dimen/_10dp"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:text="Full Name"
+                                android:layout_weight="2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+                            <TextView
+                                android:textStyle="bold"
+                                android:text="@{item.user_name}"
+                                android:layout_weight="1"
+                                android:gravity="end"
+                                android:textColor="@color/colorTextGray4"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_marginTop="@dimen/_10dp"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:text="Phone Number"
+                                android:layout_weight="2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+                            <TextView
+                                android:gravity="end"
+                                android:textStyle="bold"
+                                android:textColor="@color/colorTextGray4"
+                                android:text="@{item.user_phone}"
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_marginTop="@dimen/_10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:text="Email Address"
+                                android:layout_weight="2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+                            <TextView
+                                android:text="@{item.user_email}"
+                                android:layout_weight="1"
+                                android:gravity="end"
+                                android:textStyle="bold"
+                                android:textColor="@color/colorTextGray4"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_marginBottom="10dp"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="@dimen/_10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:text="ULP Region"
+                                android:layout_weight="2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+                            <TextView
+                                android:id="@+id/region"
+                                android:layout_weight="1"
+                                android:gravity="end"
+                                android:textStyle="bold"
+                                android:textColor="@color/colorTextGray4"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:text="More options "
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginRight="16dp"
+                        android:textColor="@color/colorAccent"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.8dp"
+                        android:layout_marginTop="@dimen/_10dp"
+                        android:background="@color/colorGray"/>
+
+                    <RelativeLayout
+                        android:id="@+id/settings"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:background="?attr/selectableItemBackground"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="16dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginStart="16dp"
+                            android:padding="7dp"
+                            android:src="@drawable/ic_settings"
+                            android:tint="@color/colorTextGray12" />
+
+                        <TextView
+                            android:id="@+id/textSettings"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="70dp"
+                            android:layout_marginStart="70dp"
+                            android:textColor="@color/colorTextGray3"
+                            android:text="Settings"
+                            android:textSize="16sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <View
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginLeft="70dp"
+                            android:layout_marginStart="70dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="0.8dp"
+                            android:background="@color/colorGray"/>
+
+                    </RelativeLayout>
+                    
+                    <RelativeLayout
+                        android:id="@+id/reset"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:background="?attr/selectableItemBackground"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="16dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginStart="16dp"
+                            android:padding="7dp"
+                            android:src="@drawable/ic_server_sync"
+                            android:tint="@color/colorTextGray12" />
+
+                        <TextView
+                            android:id="@+id/textSync"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="70dp"
+                            android:layout_marginStart="70dp"
+                            android:textColor="@color/colorTextGray3"
+                            android:text="Server Sync"
+                            android:textSize="16sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:id="@+id/lastSync"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/textSync"
+                            android:layout_marginStart="70dp"
+                            android:layout_marginLeft="70dp"
+                            android:layout_marginBottom="3dp"
+                            android:text="Last sync : a time ago"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginRight="18dp"
+                            android:layout_marginEnd="18dp"
+                            android:textColor="@color/colorTextGray1"
+                            android:textSize="@dimen/textSmall"
+                            android:layout_centerVertical="true"/>
+
+                        <View
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginLeft="70dp"
+                            android:layout_marginStart="70dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="0.8dp"
+                            android:background="@color/colorGray"/>
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.8dp"
+                        android:background="@color/colorGray" />
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/logout"
+                    style="@style/Widget.Button.Secondary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="20dp"
+                    android:text="Logout"
+                    android:textColor="@color/colorDanger" />
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </RelativeLayout>
+</layout>

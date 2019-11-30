@@ -1,0 +1,10 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <item name="ic_credit_card" type="drawable">@android:drawable/ic_menu_more</item>
+    <item name="ic_clipboard_arrow_up_outline" type="drawable">@android:drawable/ic_menu_more</item>
+    <item name="ic_briefcase_account_outline" type="drawable">@android:drawable/ic_menu_more</item>
+    <item name="ic_file_outline" type="drawable">@android:drawable/ic_menu_more</item>
+    <item name="ic_calendar_range" type="drawable">@android:drawable/ic_menu_more</item>
+    <item name="ic_comment_arrow_left_outline" type="drawable">@android:drawable/ic_menu_more</item>
+    <item name="ic_file_document_outline" type="drawable">@android:drawable/ic_menu_more</item>
+</resources>
+

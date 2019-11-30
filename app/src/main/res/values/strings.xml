@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">MAPPLES</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="cancel">Cancel</string>
+    <string name="logout">Logout</string>
+    <string name="save_changes">SAVE CHANGE</string>
+    <string name="no_pemeriksaan">No Pemeriksaan</string>
+    <string name="rayon">ULP</string>
+    <string name="nama_pelanggan">Nama Pelanggan</string>
+    <string name="tahun_meter">Tahun Meter</string>
+    <string name="id_meter">ID Meter</string>
+    <string name="status">Status</string>
+    <string name="turn_on_flashlight">Flash Light ON</string>
+    <string name="turn_off_flashlight">Flash Light OFF</string>
+    <string name="all_data">All Data</string>
+    <string name="send">Sent</string>
+    <string name="pending">Pending</string>
+    <string name="title_home">Home</string>
+    <string name="title_data_ts">Data TS</string>
+    <string name="title_account">Account</string>
+    <string name="title_log_data">Log Data</string>
+    <string name="email">Email</string>
+    <string name="telp">No Telephone</string>
+    <string name="no_induk">No Induk</string>
+    <string name="name">Nama</string>
+    <string name="unit">Unit ULP</string>
+    <string name="user_acces">Hak User</string>
+</resources>
